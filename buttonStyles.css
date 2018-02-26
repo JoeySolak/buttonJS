@@ -1,0 +1,33 @@
+.bigbox{
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: 10px auto;
+    padding: 8px;
+}
+button{
+    border-radius: 4px;
+}
+
+.gp{
+    width: inherit;
+    height: 200px;
+}
+.gp > p,
+.gp > div > p,
+.gp > div > div > p{
+    text-align: center;
+}
+.p{
+    width: 50%;
+    height: 75%;
+    margin: 0 auto;
+    float: left;
+}
+.c{
+    width: 25%;
+    height: 75%;
+    margin:0 auto;
+    float: left;
+}
