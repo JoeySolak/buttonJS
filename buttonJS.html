@@ -12,7 +12,7 @@
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <button onclick="">Night Mode</button>
+            <button onclick="nightmode()">Night Mode</button>
         </section>
 
         <section id="bb2" class="bigbox">
@@ -68,13 +68,25 @@
     <script type="text/javascript">
         //type your code for each button below the series of comments.  All javascript must be inside the script-tags
         //function 1
-
-        //function 2
-
+function nightmode(){
+  const doc = document;
+  let section1 = doc.querySelector("#bb1");
+  let subtitle = doc.querySelector("#bb1>h3.subtitle");
+  let para = doc.querySelector("#bb1>div>p");
+  section1.style.backgroundColor="#000000";
+  subtitle.style.color="#ffffff";
+  para.style.color="#ffffff";
+}
         //function 3
 
         //function 4
-
+function doctor(){
+  const doc=document;
+  let section=doc.querySelector("#bb4");
+  let subtitle=doc.querySelector("bb4>h3.subtitle");
+  let ul=doc.quertySelector("#bb4>div>ul")
+  section2.
+}
         //function 5 & 6
     </script>
 </html>
