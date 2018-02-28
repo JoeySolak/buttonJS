@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="">The Family Blood Line</button>
+            <button onclick="blood()">The Family Blood Line</button>
         </section>
 
         <section id="bb4" class="bigbox">
@@ -52,7 +52,7 @@
                     <li class="fish">blue fish</li>
                 </ul>
             </div>
-            <button onclick="">Technicolor Fish</button>
+            <button onclick="doctor()">Technicolor Fish</button>
         </section>
 
         <section id="bb5" class="bigbox">
@@ -78,14 +78,24 @@ function nightmode(){
   para.style.color="#ffffff";
 }
         //function 3
+function blood(){
+    const doc=document;
+    let gp=doc.querySelector("bb3 > .gp")
+    let pops=doc.querySelector("bb3 > .gp > .p")
+    let siblings=doc.querySelector("bb3 > .gp > .p > .c")
+    gp.style.backgroundColor="#550000"
+    p.style.backgroundColor=""
+}
 
         //function 4
 function doctor(){
   const doc=document;
-  let section=doc.querySelector("#bb4");
-  let subtitle=doc.querySelector("bb4>h3.subtitle");
-  let ul=doc.quertySelector("#bb4>div>ul")
-  section2.
+  let fish=doc.querySelectorAll("#bb4 > div > ul > .fish");
+  let redfish=fish[2];
+  let bluefish=fish[3];
+  redfish.style.color="red";
+  bluefish.style.color="blue";
+  console.log(fish);
 }
         //function 5 & 6
     </script>
