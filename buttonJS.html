@@ -80,11 +80,13 @@ function nightmode(){
         //function 3
 function blood(){
     const doc=document;
-    let gp=doc.querySelector("bb3 > .gp")
-    let pops=doc.querySelector("bb3 > .gp > .p")
-    let siblings=doc.querySelector("bb3 > .gp > .p > .c")
-    gp.style.backgroundColor="#550000"
-    p.style.backgroundColor=""
+    let gp=doc.querySelector(".gp")
+    let pops=doc.querySelector(".p")
+    let c =doc.querySelectorAll(".c")
+    gp.style.backgroundColor="#550000";
+    p.style.backgroundColor="#991100";
+    c[0].style.backgroundColor="#dd1111";
+    c[1].style.backgroundColor="#dd1111";
 }
 
         //function 4
