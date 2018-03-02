@@ -20,7 +20,7 @@
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <button onclick="">Toggle Day/Night Mode</button>
+            <button onclick="daymode()">Toggle Day/Night Mode</button>
         </section>
 
         <section id="bb3" class="bigbox">
@@ -77,6 +77,17 @@ function nightmode(){
   subtitle.style.color="#ffffff";
   para.style.color="#ffffff";
 }
+
+function daymode(){
+  const doc=document;
+  let section2 = doc.querySelector("#bb2");
+  let subtitle = doc.querySelector("#bb2 > h3.subtitle");
+  let para = doc.querySelector("#bb2 > div> p");
+  section2.classList.toggle=("nightmode");
+  subtitle.classList.toggle=("nightmode");
+  para.classList.toggle=("nightmode");
+
+}
         //function 3
 function blood(){
     const doc=document;
@@ -100,5 +111,10 @@ function doctor(){
   console.log(fish);
 }
         //function 5 & 6
+  function count(){
+    const doc=document;
+    let one=doc.querySelector("20");
+
+  }
     </script>
 </html>
