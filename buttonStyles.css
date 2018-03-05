@@ -31,3 +31,8 @@ button{
     margin:0 auto;
     float: left;
 }
+
+.nightmode{
+  background-color: black;
+  color: white;
+}
