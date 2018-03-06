@@ -61,8 +61,8 @@
                 <span>20</span>
             </div>
             <br>
-            <button onclick="updateCount">+1</button>
-            <button onclick="">+10</button>
+            <button onclick="add1()">+1</button>
+            <button onclick="add10()">+10</button>
         </section>
     </body>
     <script type="text/javascript">
@@ -107,12 +107,20 @@ function doctor(){
   console.log(fish);
 }
         //function 5 & 6
-  function updateCount(){
+  function add1(){
     const doc=document;
-    let count=doc.querySelector("#bb5");
-    let updatedCount = Number(bb5.querySelector("div > span").innerHTML);
-    updatedCount++;
-    bb5.querySelector(".count").innerHTML =updatedCount;
+    let span = doc.getElementByTagName("span");
+    let value = Number(doc.querySelector("span").innerHTML);
+    value++;
+    doc.querySelector("span").innerHTML = value;
+  }
+
+  function add10(){
+    const doc=document;
+    let span = doc.getElementByTagName("span");
+    let value = Number(doc.querySelector("span").innerHTML);
+    value + 10;
+    doc.querySelector("span").innerHTML = value;
   }
     </script>
 </html>
