@@ -109,7 +109,7 @@ function doctor(){
         //function 5 & 6
   function add1(){
     const doc=document;
-    let span = doc.getElementByTagName("span");
+    let span = doc.getElementsByTagName("span");
     let value = Number(doc.querySelector("span").innerHTML);
     value++;
     doc.querySelector("span").innerHTML = value;
@@ -117,10 +117,15 @@ function doctor(){
 
   function add10(){
     const doc=document;
-    let span = doc.getElementByTagName("span");
+    let span = doc.getElementsByTagName("span");
     let value = Number(doc.querySelector("span").innerHTML);
-    value + 10;
+    value = value + 10;
     doc.querySelector("span").innerHTML = value;
+  }
+
+  function random(){
+      const doc = document;
+      
   }
     </script>
 </html>
